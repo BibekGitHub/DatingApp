@@ -56,7 +56,7 @@ namespace API.Controllers
             {
                 return NoContent();
             }
-            return BadRequest("Failed to update user");
+            return BadRequest("Failed to update user details");
         }
 
         [HttpPost("add-photo")]
