@@ -25,7 +25,7 @@ namespace API.Controllers
         {
             if (await UserExists(registerDto.Username))
             {
-                return BadRequest("Username is taken");
+                return BadRequest("Username is taken. Please use try different username");
             }
 
             using var hmac = new HMACSHA512();
