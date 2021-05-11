@@ -88,7 +88,7 @@ namespace API.Controllers
             {
                 return _mapper.Map<PhotoDto>(photo);
             }
-            return BadRequest("Problem adding photo, something didn't go right.");
+            return BadRequest("Problem adding photo, something didn't go right. Please try again.");
         }
     }
 }
